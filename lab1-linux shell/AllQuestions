@@ -1,0 +1,281 @@
+Quetion 1:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Making Folders Based on Tree in nested levels"
+mkdir -p a
+mkdir -p a/b
+mkdir -p a/d
+mkdir -p a/b/e
+mkdir -p a/b/f
+mkdir -p a/b/c
+mkdir -p a/b/f/i
+mkdir -p a/b/c/g
+mkdir -p a/b/c/g/h
+
+echo "changing the permission of folders"
+chmod 773 a/b/c/g/h
+chmod 737 a/b/c/g
+chmod 477 a/b/f/i
+chmod 777 a/b/e
+chmod 777 a/b/f
+chmod 773 a/b/c
+chmod 770 a/b
+chmod 555 a/d
+chmod 777 a
+
+echo "trying to make file and then chenging its permission"
+touch a/xyz
+chmod 600 a/xyz
+
+echo "Finished"
+
+
+
+Question 2:
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Making Files and Folsers and entering in Directory a: "
+mkdir q2
+touch q2/a
+touch q2/b
+mkdir q2/d
+
+cd q2
+
+echo "Using  umask command for first Time: "
+umask u+rw
+
+ls -l
+
+echo "Using  umask command for second Time: "
+umask a+rw
+
+ls -l
+
+touch q2/a2
+touch q2/b2
+mkdir q2/d2
+
+echo "
+The result is look like toghather when we applied to directory in second time
+"
+
+
+
+Question 3:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "First Find and saving the errors into log file: 
+"
+find / -name 'core' 2>log.txt
+
+echo "Second Find with their weights:
+"
+find / -name 'conf' printf "%p%k KB"
+
+echo "Third Find with specific permission:
+"
+find / -user bin -perm 555
+
+echo "Fourth Find for less than a week:
+"
+find / -user s224309 -mtime -7
+
+
+
+
+Question 4:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+
+echo "Make 15 new files XXXi ANd folder q4 :"
+mkdir "q4"
+
+for (( i=1; i<=15; i++ ))
+do
+	touch "q4/XXX"$i
+done
+
+echo "Openning the folder q4"
+cd q4
+
+echo "Disply the list of files in descending order
+***************************************************"
+ls -ltu>list_descending.txt
+
+echo "Disply the list of files in ascending order
+**************************************************"
+ls -ltr>list_ascending.txt
+
+
+
+Question 5:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Searching for any things finished by backup: "
+find /home/s224309 -name '*backup' -type d -exec mv \{} ./backup \;
+
+
+
+Question 6:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "searching for files with 2mg and starting with a and finishing by o:  "
+find /size  +2M | find / -type f -name 'a*o'
+
+
+
+Question 7:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+
+echo "Coping files from  $1 to $2 :"
+cp -r $1/* $2
+echo "Copying finished"
+
+
+Question 8:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo 'Current Path:' $PATH
+
+echo 'We will change to /user/local/sbin/testdir'
+
+export PATH=$PATH'/user/local/sbin/JavadDir'
+
+echo 'New Path:' $PATH
+
+
+
+Question 9:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Starting to read from file: "
+linecounter=0
+while read line           
+do                
+	((linecounter+=1))
+	echo "The value of line $linecounter is :  \"$line\""  
+	
+	if [ "$line" = "END" ]; then
+		echo "*********************************"
+		break;  
+        fi
+
+done <q9_string.txt 
+
+
+Question 10:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Getting the inputs"
+N=$1
+M=$2
+
+echo "Drwing the Schame"
+for (( i=1; i<=N; i++ ))
+do
+	printf "-"
+done
+
+echo "" #New Line
+
+for (( j=1; j<=M; j++ ))
+do
+	printf "|" 
+	for (( i=2; i<N; i++ ))
+	do
+		printf " "
+	done
+	printf "|"
+	echo ""
+done
+
+for (( i=1; i<=N; i++ ))
+do
+	printf "-"
+done
+
+echo ""
+
+
+
+
+Question 11:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+
+echo "Getting input values : "
+InputDir=$1
+InputSize=$2
+
+state=0
+echo "looking for result in folder: "
+for entry in "$InputDir"/*
+do
+	if [ -f "$entry" ];then
+		FILESIZE=$(stat -c%s "$entry")
+		if [ $FILESIZE -ge $InputSize ]; then
+			echo "File: $entry 		FILESIZE: "$FILESIZE"B"
+			state=1
+		fi
+	fi
+
+done
+
+if [ $state = 0 ]; then
+	echo "No result!....."
+fi
+
+
+
+
+Question 12:
+
+#!/bin/bash
+# My first script
+#S224309 Javad Malek Shahkoohi 
+
+echo "Giving the permission to users: "
+umask u+rwx g+rwx o+rwx
+
+echo "Making nested folders: "
+mkdir -v $1
+
+cd $1
+mkdir -v $2
+
+cd $2
+mkdir -v branches tags trunk

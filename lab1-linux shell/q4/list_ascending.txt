@@ -1,0 +1,18 @@
+total 4
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX1
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX2
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX3
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX4
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX5
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX6
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX7
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX8
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX9
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX10
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX11
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX12
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX13
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX14
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 XXX15
+-rw-rw-r-- 1 steve steve 749 ott 20 21:41 list_descending.txt
+-rw-rw-r-- 1 steve steve   0 ott 20 21:41 list_ascending.txt

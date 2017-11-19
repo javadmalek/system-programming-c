@@ -1,0 +1,33 @@
+abrt:x:498:498::/etc/abrt:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+halt:x:7:0:halt:/sbin:/sbin/halt
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+pulse:x:496:494:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+root:x:0:0:root:/root:/bin/bash
+rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+saslauth:x:497:495:"Saslauthd user":/var/empty/saslauth:/sbin/nologin
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+sunny:x:501:501::/home/sunny:/bin/bash
+sweeto:x:500:500:sweeto's_linux:/home/sweeto:/bin/bash
+sync:x:5:0:sync:/sbin:/bin/sync
+tcpdump:x:72:72::/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin

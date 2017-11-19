@@ -1,0 +1,18 @@
+total 12
+-rw-r--r-- 1 steve steve 9563 ott 20 18:11 ort
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX2
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX1
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX3
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX5
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX4
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX6
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX8
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX7
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX9
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX10
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX11
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX12
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX15
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX14
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 XXX13
+-rw-rw-r-- 1 steve steve    0 ott 20 18:34 list.txt
